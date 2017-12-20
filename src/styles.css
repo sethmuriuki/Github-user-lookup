@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+header {
+    text-align: center;
+    background-color: black;
+    color: beige;
+    padding: 40px;
+}
+
+img {
+    float: right;
+    /* height: 200px;
+    width: 200px; */
+    background-image: url("./assets/images/steroidtocat.png");
+    background-size: contain;
+}
+
+#display {
+    background-image: url("./assets/images/baracktocat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 400px;
+    color: rgb(85, 85, 27);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: beige;
+    padding-top: 40px;
+}

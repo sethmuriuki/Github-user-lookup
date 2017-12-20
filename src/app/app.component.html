@@ -1,13 +1,29 @@
 <header>
     <h1>{{title}}</h1>
 </header>
-<Label>Search</Label>
-<input placeholder="Enter username" [(ngModel)]="userName">
-<button (click)="searchUser()">Search</button>
-
-<img src="{{githubinfo.avatar_url}}" style="height:200px; width:200px">
-<h3>Name: {{githubinfo.login}}</h3>
-<h3>Followers: {{githubinfo.followers}}</h3>
-<h3>Following: {{githubinfo.following}}</h3>
-<h3>repos: {{githubinfo.public_repos}}</h3>
-<h3>Github link: {{githubinfo.url}}</h3>
+<div class="container">
+    <div class="row" id="display">
+        <div class="col-sm-6">
+            <div class="info">
+                <Label>Search</Label>
+                <input placeholder="Enter username" [(ngModel)]="userName">
+                <button (click)="searchUser()">Search</button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="imgs">
+                <img src="{{githubinfo.avatar_url}}" style="height:200px; width:200px">
+            </div>
+            <div class="info">
+                <h3>Name: {{githubinfo.login}}</h3>
+                <h3>Followers: {{githubinfo.followers}}</h3>
+                <h3>Following: {{githubinfo.following}}</h3>
+                <h3>repos: {{githubinfo.public_repos}}</h3>
+                <h3><a [href]="githubinfo.html_url"> Github Page</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <h4>By:Seth Muriuki Wamae</h4>
+</footer>
