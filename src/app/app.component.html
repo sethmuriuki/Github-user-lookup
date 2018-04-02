@@ -1,29 +1,33 @@
 <header>
-    <h1>{{title}}</h1>
+    <h1 style="font-family: 'Luckiest Guy', cursive;    ">{{title}}</h1>
 </header>
 <div class="container">
-    <div class="row" id="display">
-        <div class="col-sm-6">
-            <div class="info">
-                <Label>Search</Label>
-                <input placeholder="Enter username" [(ngModel)]="userName">
-                <button (click)="searchUser()">Search</button>
-            </div>
+
+    <div class="info">
+
+        <input placeholder="Enter username" [(ngModel)]="userName">
+        <button (click)="searchUser()">Search</button>
+    </div>
+
+    <div class="uk-card uk-card-primary uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+            <img src="{{githubinfo.avatar_url}}" alt="" uk-cover>
+            <canvas width="60" height="40"></canvas>
         </div>
-        <div class="col-sm-6">
-            <div class="imgs">
-                <img src="{{githubinfo.avatar_url}}" style="height:200px; width:200px">
-            </div>
-            <div class="info">
-                <h3>Name: {{githubinfo.login}}</h3>
-                <h3>Followers: {{githubinfo.followers}}</h3>
-                <h3>Following: {{githubinfo.following}}</h3>
-                <h3>repos: {{githubinfo.public_repos}}</h3>
-                <h3><a [href]="githubinfo.html_url"> Github Page</a></h3>
+        <div>
+            <div class="uk-card-body">
+                <h3 class="uk-card-title" style="font-family: 'Kalam', cursive;">{{githubinfo.login}}</h3>
+                <hr>
+                <h3 style="font-family: 'Kalam', cursive;">Followers: {{githubinfo.followers}}</h3>
+                <hr>
+                <h3 style="font-family: 'Kalam', cursive;">Following: {{githubinfo.following}}</h3>
+                <hr>
+                <h3 style="font-family: 'Kalam', cursive;">repos: {{githubinfo.public_repos}}</h3>
+                <hr>
+                <h3 style="font-family: 'Kalam', cursive;"><a [href]="githubinfo.html_url"> Github Page</a></h3>
             </div>
         </div>
     </div>
+
+
 </div>
-<footer>
-    <h4>By:Seth Muriuki Wamae</h4>
-</footer>

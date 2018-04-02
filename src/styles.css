@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    background-color: black;
+    background-color: rgb(163, 195, 206);
     color: beige;
     padding: 40px;
 }
@@ -11,19 +11,4 @@ img {
     width: 200px; */
     background-image: url("./assets/images/steroidtocat.png");
     background-size: contain;
-}
-
-#display {
-    background-image: url("./assets/images/baracktocat.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 400px;
-    color: rgb(85, 85, 27);
-}
-
-footer {
-    text-align: center;
-    background-color: black;
-    color: beige;
-    padding-top: 40px;
 }
